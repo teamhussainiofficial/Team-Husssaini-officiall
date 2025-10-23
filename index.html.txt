@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Hussaini Official — Protecting the Honor of Huzoor صلى الله عليه وسلم</title>
+    <meta name="description" content="A peaceful organisation dedicated to protecting the honor of Huzoor صلى الله عليه وسلم, helping the oppressed (Mazloomeen), and supporting lawful and shar‘i actions.">
+    <!-- Google Fonts: Playfair Display (serif for headings), Roboto (sans-serif for body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #f5f5f5; /* Light text on dark background */
+            background-color: #000; /* Black background */
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: #D4AF37; /* Gold accent */
+        }
+        a {
+            color: #D4AF37;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #F5E7C3; /* Cream hover */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #000;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        }
+        .logo img {
+            height: 60px;
+            width: auto;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        /* Hero Section */
+        #hero {
+            background: linear-gradient(to bottom, #000, #333);
+            padding: 120px 20px 80px; /* Extra top padding for fixed header */
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        #hero .subheadline {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        #hero .small-line {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            color: #F5E7C3;
+        }
+        #hero p {
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            border: 2px solid #D4AF37;
+            border-radius: 25px;
+            background-color: transparent;
+            color: #D4AF37;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #D4AF37;
+            color: #000;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+            transform: scale(1.05);
+        }
+
+        /* About Section */
+        #about {
+            padding: 80px 20px;
+            background-color: #111; /* Slightly lighter black */
+            text-align: center;
+        }
+        #about h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        #about blockquote {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #about ul {
+            list-style: none;
+            padding: 0;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        #about li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            text-align: left;
+            position: relative;
+        }
+        #about li::before {
+            content: "•";
+            color: #D4AF37;
+            position: absolute;
+            left: 0;
+        }
+        #about .note {
+            font-style: italic;
+            color: #ccc;
+        }
+
+        /* Join Section */
+        #join {
+            padding: 80px 20px;
+            background-color: #000;
+            text-align: center;
+        }
+        #join h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        #join p {
+            margin-bottom: 40px;
+        }
+        #join .note {
+            font-size: 0.9rem;
+            color: #ccc;
+            margin-top: 20px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 20px;
+            background-color: #111;
+            text-align: center;
+        }
+        footer p {
+            margin-bottom: 10px;
+        }
+        footer .legal {
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                padding: 10px;
+            }
+            nav {
+                margin-top: 10px;
+                gap: 15px;
+            }
+            #hero h1 {
+                font-size: 2rem;
+            }
+            #hero .subheadline {
+                font-size: 1rem;
+            }
+            .btn {
+                padding: 12px 25px;
+                margin: 5px;
+            }
+            #about h2, #join h2 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- Replace /assets/logo.png with your actual logo path -->
+            <img src="/assets/logo.png" alt="Team Hussaini Official Logo">
+        </div>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#about">Mission</a> <!-- Mission is part of About section -->
+            <a href="#join">Join</a>
+            <a href="https://www.instagram.com/channel/AbaU01kG4w15B9fb/?igsh=MXhkdzFubnN5y" target="_blank">Broadcast</a>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h1>Team Hussaini Official</h1>
+            <p class="subheadline">“Protecting the honor of Huzoor صلى الله عليه وسلم — lawfully and respectfully.”</p>
+            <p class="small-line">Standing with the Mazloomeen and supporting the Madadgar — always.</p>
+            <p>Join our peaceful, legal, and shar‘i efforts to safeguard the dignity of Allah Paak and Huzoor صلى الله عليه وسلم, and to support the oppressed (Mazloomeen) with justice and compassion.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHxLwZ5RKWdpq0mbf5Kzpgm9cFVDylhtKouUQD4751SgQ1vw/viewform" target="_blank" class="btn">Join Team</a>
+            <a href="https://www.instagram.com/channel/AbaU01kG4w15B9fb/?igsh=MXhkdzFubnN5y" target="_blank" class="btn">Join Broadcast</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>Our Mission</h2>
+            <blockquote>
+                Hamari tanzeem ka asal maqsad hai:<br>
+                Huzoor صلى الله عليه وسلم ki namoos ki hifazat karna,<br>
+                aur jo log Allah Paak ya Huzoor صلى الله عليه وسلم ki shaan mein gustakhi karte hain,<br>
+                unke against legal aur shar‘i tor par action lena.<br><br>
+                Hum Mazloomon ke saath hain, unki madad karte hain, aur Madadgaron ko support karte hain jo insaaf aur aman ke liye kaam karte hain.
+            </blockquote>
+            <ul>
+                <li>Huzoor صلى الله عليه وسلم ki namoos ki hifazat karna.</li>
+                <li>Gustakhi karne walon ke khilaaf legal aur shar‘i action lena.</li>
+                <li>Mazloomon aur madadgaron ki madad karna, insaaf aur aman ko barqarar rakhna.</li>
+            </ul>
+            <p class="note">“We do not endorse violence. All actions are lawful, peaceful, and follow shar‘i and legal guidance.”</p>
+        </div>
+    </section>
+
+    <section id="join">
+        <div class="container">
+            <h2>Join Team Hussaini</h2>
+            <p>Click below to open the official registration form or join our broadcast for latest updates and campaigns.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHxLwZ5RKWdpq0mbf5Kzpgm9cFVDylhtKouUQD4751SgQ1vw/viewform" target="_blank" class="btn">Join Team (Google Form)</a>
+            <a href="https://www.instagram.com/channel/AbaU01kG4w15B9fb/?igsh=MXhkdzFubnN5y" target="_blank" class="btn">Join Broadcast (Instagram)</a>
+            <p class="note">“By joining, you agree to be contacted about lawful, peaceful, and community-based initiatives.”</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Contact: <a href="mailto:contact@teamhussaini.org">contact@teamhussaini.org</a></p>
+            <!-- Optional: Add social icons here if needed, e.g., <a href="#"><img src="icon.png" alt="Social"></a> -->
+            <p class="legal">Team Hussaini Official supports Mazloomeen and Madadgaron through lawful, non-violent actions. All efforts are peaceful, legal, and guided by shar‘i principles.</p>
+        </div>
+    </footer>
+
+    <!-- Minimal JS: None required for this implementation, as smooth scroll is handled via CSS -->
+</body>
+</html>
+<img src="/assets/logo.png" alt="Team Hussaini Official Logo">
