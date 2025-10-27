@@ -5,225 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Hussaini Official — Protecting the Honor of Huzoor صلى الله عليه وسلم</title>
     <meta name="description" content="A peaceful organisation dedicated to protecting the honor of Huzoor صلى الله عليه وسلم, helping the oppressed (Mazloomeen), and supporting lawful and shar‘i actions.">
-    <!-- Google Fonts: Playfair Display (serif for headings), Roboto (sans-serif for body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
     <style>
-        /* Reset and base styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            scroll-behavior: smooth;
-        }
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        html {scroll-behavior: smooth;}
         body {
             font-family: 'Roboto', sans-serif;
             font-size: 16px;
             line-height: 1.6;
-            color: #f5f5f5; /* Light text on dark background */
-            background-color: #000; /* Black background */
-        }
-        h1, h2, h3 {
-            font-family: 'Playfair Display', serif;
-            color: #D4AF37; /* Gold accent */
-        }
-        a {
-            color: #D4AF37;
-            text-decoration: none;
-        }
-        a:hover {
-            color: #F5E7C3; /* Cream hover */
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Header */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
+            color: #f5f5f5;
             background-color: #000;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 100;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.5);
         }
-        .logo img {
-            height: 60px;
-            width: auto;
-        }
-        nav {
-            display: flex;
-            gap: 20px;
-        }
-        nav a {
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
+        h1, h2, h3 {font-family: 'Playfair Display', serif; color: #D4AF37;}
+        a {color: #D4AF37; text-decoration: none;}
+        a:hover {color: #F5E7C3;}
+        .container {max-width: 1200px; margin: 0 auto; padding: 0 20px;}
 
-        /* Hero Section */
+        header {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 20px; background-color: #000; position: fixed; top: 0; width: 100%;
+            z-index: 100; box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+        }
+        .logo img {height: 60px; width: auto;}
+        nav {display: flex; gap: 20px;}
+        nav a {font-weight: 500; transition: color 0.3s ease;}
+
         #hero {
             background: linear-gradient(to bottom, #000, #333);
-            padding: 120px 20px 80px; /* Extra top padding for fixed header */
+            padding: 120px 20px 80px;
             text-align: center;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
-        #hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        #hero .subheadline {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-            font-style: italic;
-        }
-        #hero .small-line {
-            font-size: 1rem;
-            margin-bottom: 20px;
-            color: #F5E7C3;
-        }
-        #hero p {
-            max-width: 600px;
-            margin: 0 auto 40px;
-        }
+        #hero h1 {font-size: 2.5rem; margin-bottom: 10px;}
+        #hero .subheadline {font-size: 1.2rem; margin-bottom: 10px; font-style: italic;}
+        #hero .small-line {font-size: 1rem; margin-bottom: 20px; color: #F5E7C3;}
+        #hero p {max-width: 600px; margin: 0 auto 40px;}
         .btn {
-            display: inline-block;
-            padding: 15px 30px;
-            margin: 10px;
-            border: 2px solid #D4AF37;
-            border-radius: 25px;
-            background-color: transparent;
-            color: #D4AF37;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            text-align: center;
+            display: inline-block; padding: 15px 30px; margin: 10px;
+            border: 2px solid #D4AF37; border-radius: 25px;
+            background-color: transparent; color: #D4AF37; font-weight: 500;
+            transition: all 0.3s ease; text-align: center;
         }
         .btn:hover {
-            background-color: #D4AF37;
-            color: #000;
+            background-color: #D4AF37; color: #000;
             box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
             transform: scale(1.05);
         }
 
-        /* About Section */
-        #about {
-            padding: 80px 20px;
-            background-color: #111; /* Slightly lighter black */
-            text-align: center;
-        }
-        #about h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-        #about blockquote {
-            font-size: 1.1rem;
-            margin-bottom: 30px;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        #about ul {
-            list-style: none;
-            padding: 0;
-            max-width: 600px;
-            margin: 0 auto 30px;
-        }
-        #about li {
-            margin-bottom: 10px;
-            padding-left: 20px;
-            text-align: left;
-            position: relative;
-        }
-        #about li::before {
-            content: "•";
-            color: #D4AF37;
-            position: absolute;
-            left: 0;
-        }
-        #about .note {
-            font-style: italic;
-            color: #ccc;
-        }
+        #about {padding: 80px 20px; background-color: #111; text-align: center;}
+        #about h2 {font-size: 2rem; margin-bottom: 20px;}
+        #about blockquote {font-size: 1.1rem; margin-bottom: 30px; max-width: 800px; margin: 0 auto;}
+        #about ul {list-style: none; max-width: 600px; margin: 0 auto 30px;}
+        #about li {margin-bottom: 10px; padding-left: 20px; text-align: left; position: relative;}
+        #about li::before {content: "•"; color: #D4AF37; position: absolute; left: 0;}
+        #about .note {font-style: italic; color: #ccc;}
 
-        /* Join Section */
-        #join {
-            padding: 80px 20px;
-            background-color: #000;
-            text-align: center;
-        }
-        #join h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-        #join p {
-            margin-bottom: 40px;
-        }
-        #join .note {
-            font-size: 0.9rem;
-            color: #ccc;
-            margin-top: 20px;
-        }
+        #join {padding: 80px 20px; background-color: #000; text-align: center;}
+        #join h2 {font-size: 2rem; margin-bottom: 20px;}
+        #join p {margin-bottom: 40px;}
+        #join .note {font-size: 0.9rem; color: #ccc; margin-top: 20px;}
 
-        /* Footer */
-        footer {
-            padding: 40px 20px;
+        /* New Actions Section */
+        #actions {
+            padding: 80px 20px;
             background-color: #111;
             text-align: center;
         }
-        footer p {
-            margin-bottom: 10px;
+        #actions h2 {color: #D4AF37; margin-bottom: 20px;}
+        #actions p {color: #ccc; max-width: 800px; margin: 0 auto 40px;}
+        #actions .action-grid {
+            display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;
         }
-        footer .legal {
-            font-size: 0.9rem;
-            color: #ccc;
+        #actions .action-item {
+            background-color: #000;
+            border: 1px solid #D4AF37;
+            border-radius: 10px;
+            padding: 10px;
+            width: 250px;
         }
+        #actions img {width: 100%; border-radius: 10px;}
+        #actions .action-item p {margin-top: 10px; color: #ccc;}
 
-        /* Responsive Design */
+        footer {padding: 40px 20px; background-color: #111; text-align: center;}
+        footer p {margin-bottom: 10px;}
+        footer .legal {font-size: 0.9rem; color: #ccc;}
+
         @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                padding: 10px;
-            }
-            nav {
-                margin-top: 10px;
-                gap: 15px;
-            }
-            #hero h1 {
-                font-size: 2rem;
-            }
-            #hero .subheadline {
-                font-size: 1rem;
-            }
-            .btn {
-                padding: 12px 25px;
-                margin: 5px;
-            }
-            #about h2, #join h2 {
-                font-size: 1.8rem;
-            }
+            header {flex-direction: column; padding: 10px;}
+            nav {margin-top: 10px; gap: 15px;}
+            #hero h1 {font-size: 2rem;}
+            #hero .subheadline {font-size: 1rem;}
+            .btn {padding: 12px 25px; margin: 5px;}
+            #about h2, #join h2 {font-size: 1.8rem;}
         }
     </style>
 </head>
 <body>
     <header>
         <div class="logo">
-            <!-- Replace /assets/logo.png with your actual logo path -->
             <img src="logo.png.jpeg" alt="Team Hussaini Official Logo">
         </div>
         <nav>
             <a href="#about">About</a>
-            <a href="#about">Mission</a> <!-- Mission is part of About section -->
+            <a href="#about">Mission</a>
             <a href="#join">Join</a>
             <a href="https://www.instagram.com/channel/AbaU01kG4w15B9fb/?igsh=MXhkdzFubnN5y" target="_blank">Broadcast</a>
         </nav>
@@ -269,36 +159,41 @@
         </div>
     </section>
 
+    <!-- Actions Result Section -->
+    <section id="actions">
+        <div class="container">
+            <h2>Actions Result</h2>
+            <p>
+                Team Hussaini ke dwara liye gaye actions ke nateeje mein, gustakho dwara kiye gaye social media posts aur comments ko delete karwaya gaya, 
+                unse maafi mangwaya gayi aur ye sunischit kiya gaya ke ainda kabhi aisi ghalti dobara na ho.
+            </p>
+
+            <div class="action-grid">
+                <div class="action-item">
+                    <img src="action1.jpeg" alt="Action 1">
+                    <p>Action 1 Result</p>
+                </div>
+                <div class="action-item">
+                    <img src="action2.jpeg" alt="Action 2">
+                    <p>Action 2 Result</p>
+                </div>
+                <div class="action-item">
+                    <img src="action3.jpeg" alt="Action 3">
+                    <p>Action 3 Result</p>
+                </div>
+                <div class="action-item">
+                    <img src="action4.jpeg" alt="Action 4">
+                    <p>Action 4 Result</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
             <p>Contact: <a href="mailto:contact@teamhussaini.org">contact@teamhussaini.org</a></p>
-            <!-- Optional: Add social icons here if needed, e.g., <a href="#"><img src="icon.png" alt="Social"></a> -->
             <p class="legal">Team Hussaini Official supports Mazloomeen and Madadgaron through lawful, non-violent actions. All efforts are peaceful, legal, and guided by shar‘i principles.</p>
         </div>
     </footer>
-
-    <!-- Minimal JS: None required for this implementation, as smooth scroll is handled via CSS -->
 </body>
 </html>
-<img src="logo.png.jpeg" alt="Website Logo" style="height:80px; width:auto;">
-<section id="actions" style="padding: 20px; background-color: #f8f8f8;">
-  <h2>Team Hussaini द्वारा लिए गए Action का परिणाम</h2>
-  <p>
-    Team Hussaini के द्वारा समय पर और शांतिपूर्ण तरीके से कार्रवाई की गई,
-    जिसके परिणामस्वरूप <strong>गुस्ताख़ों द्वारा किए गए सोशल मीडिया पोस्ट और आपत्तिजनक कमेंट्स को हटवाया गया</strong>।
-    साथ ही, संबंधित व्यक्तियों से <strong>लिखित माफ़ी मंगवाई गई</strong> और उनसे यह
-    <strong>आश्वासन लिया गया कि भविष्य में ऐसी गलती दोबारा नहीं होगी</strong>।
-  </p>
-  <p>
-    Team Hussaini लगातार इस बात पर नज़र रखती है कि सोशल मीडिया पर किसी भी प्रकार की धार्मिक भावनाओं को ठेस पहुँचाने वाली गतिविधि न हो।
-    हमारा उद्देश्य है – <strong>सम्मान, न्याय और शांति के साथ सही संदेश को आगे बढ़ाना।</strong>
-  </p>
-
-  <div class="action-photos" style="display:flex; gap:10px; flex-wrap:wrap;">
-    <img src="assets/images/action1.jpg" alt="Deleted post proof" width="300">
-    <img src="assets/images/action2.jpg" alt="Apology letter or message screenshot" width="300">
-    <img src="assets/images/action3.jpg" alt="Team Hussaini coordination photo" width="300">
-  </div>
-</section>
-
-
