@@ -1,200 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Hussaini Official — Protecting the Honor of Huzoor صلى الله عليه وسلم</title>
-    <meta name="description" content="A peaceful organisation dedicated to protecting the honor of Huzoor صلى الله عليه وسلم, helping the oppressed (Mazloomeen), and supporting lawful and shar‘i actions.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Hussaini Official — Protecting the Honor of Huzoor صلى الله عليه وسلم</title>
+  <meta name="description" content="A peaceful organisation dedicated to protecting the honor of Huzoor صلى الله عليه وسلم, helping the oppressed (Mazloomeen), and supporting lawful and shar‘i actions.">
 
-    <style>
-        * {margin: 0; padding: 0; box-sizing: border-box;}
-        html {scroll-behavior: smooth;}
-        body {
-            font-family: 'Roboto', sans-serif;
-            font-size: 16px;
-            line-height: 1.6;
-            color: #f5f5f5;
-            background-color: #000;
-        }
-        h1, h2, h3 {font-family: 'Playfair Display', serif; color: #D4AF37;}
-        a {color: #D4AF37; text-decoration: none;}
-        a:hover {color: #F5E7C3;}
-        .container {max-width: 1200px; margin: 0 auto; padding: 0 20px;}
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 
-        header {
-            display: flex; justify-content: space-between; align-items: center;
-            padding: 20px; background-color: #000; position: fixed; top: 0; width: 100%;
-            z-index: 100; box-shadow: 0 2px 5px rgba(0,0,0,0.5);
-        }
-        .logo img {height: 60px; width: auto;}
-        nav {display: flex; gap: 20px;}
-        nav a {font-weight: 500; transition: color 0.3s ease;}
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-        #hero {
-            background: linear-gradient(to bottom, #000, #333);
-            padding: 120px 20px 80px;
-            text-align: center;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-        #hero h1 {font-size: 2.5rem; margin-bottom: 10px;}
-        #hero .subheadline {font-size: 1.2rem; margin-bottom: 10px; font-style: italic;}
-        #hero .small-line {font-size: 1rem; margin-bottom: 20px; color: #F5E7C3;}
-        #hero p {max-width: 600px; margin: 0 auto 40px;}
-        .btn {
-            display: inline-block; padding: 15px 30px; margin: 10px;
-            border: 2px solid #D4AF37; border-radius: 25px;
-            background-color: transparent; color: #D4AF37; font-weight: 500;
-            transition: all 0.3s ease; text-align: center;
-        }
-        .btn:hover {
-            background-color: #D4AF37; color: #000;
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
-            transform: scale(1.05);
-        }
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Roboto',sans-serif;background:#000;color:#f5f5f5;line-height:1.6;}
+    h1,h2{font-family:'Playfair Display',serif;color:#D4AF37;}
+    a{color:#D4AF37;text-decoration:none;}a:hover{color:#F5E7C3;}
 
-        #about {padding: 80px 20px; background-color: #111; text-align: center;}
-        #about h2 {font-size: 2rem; margin-bottom: 20px;}
-        #about blockquote {font-size: 1.1rem; margin-bottom: 30px; max-width: 800px; margin: 0 auto;}
-        #about ul {list-style: none; max-width: 600px; margin: 0 auto 30px;}
-        #about li {margin-bottom: 10px; padding-left: 20px; text-align: left; position: relative;}
-        #about li::before {content: "•"; color: #D4AF37; position: absolute; left: 0;}
-        #about .note {font-style: italic; color: #ccc;}
+    header{display:flex;justify-content:space-between;align-items:center;padding:20px;background:#000;position:fixed;top:0;width:100%;z-index:100;box-shadow:0 2px 5px rgba(0,0,0,0.5);}
+    .logo img{height:60px;width:auto;}
+    nav{display:flex;gap:20px;}
 
-        #join {padding: 80px 20px; background-color: #000; text-align: center;}
-        #join h2 {font-size: 2rem; margin-bottom: 20px;}
-        #join p {margin-bottom: 40px;}
-        #join .note {font-size: 0.9rem; color: #ccc; margin-top: 20px;}
+    #hero{background:linear-gradient(to bottom,#000,#333);padding:120px 20px 80px;text-align:center;min-height:100vh;display:flex;flex-direction:column;justify-content:center;}
+    #hero h1{font-size:2.5rem;margin-bottom:10px;}
+    .btn{display:inline-block;padding:15px 30px;margin:10px;border:2px solid #D4AF37;border-radius:25px;background:transparent;color:#D4AF37;transition:all .3s ease;}
+    .btn:hover{background:#D4AF37;color:#000;transform:scale(1.05);}
+    section{padding:80px 20px;text-align:center;}
+    #about{background:#111;}
 
-        /* New Actions Section */
-        #actions {
-            padding: 80px 20px;
-            background-color: #111;
-            text-align: center;
-        }
-        #actions h2 {color: #D4AF37; margin-bottom: 20px;}
-        #actions p {color: #ccc; max-width: 800px; margin: 0 auto 40px;}
-        #actions .action-grid {
-            display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;
-        }
-        #actions .action-item {
-            background-color: #000;
-            border: 1px solid #D4AF37;
-            border-radius: 10px;
-            padding: 10px;
-            width: 250px;
-        }
-        #actions img {width: 100%; border-radius: 10px;}
-        #actions .action-item p {margin-top: 10px; color: #ccc;}
+    #actions{background:#000;}
+    .actions-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:40px;}
+    .action-item img{width:100%;border-radius:10px;box-shadow:0 0 10px rgba(212,175,55,0.3);}
+    .action-item p{margin-top:10px;font-weight:500;color:#F5E7C3;}
 
-        footer {padding: 40px 20px; background-color: #111; text-align: center;}
-        footer p {margin-bottom: 10px;}
-        footer .legal {font-size: 0.9rem; color: #ccc;}
-
-        @media (max-width: 768px) {
-            header {flex-direction: column; padding: 10px;}
-            nav {margin-top: 10px; gap: 15px;}
-            #hero h1 {font-size: 2rem;}
-            #hero .subheadline {font-size: 1rem;}
-            .btn {padding: 12px 25px; margin: 5px;}
-            #about h2, #join h2 {font-size: 1.8rem;}
-        }
-    </style>
+    footer{padding:40px 20px;background:#111;text-align:center;color:#ccc;}
+    footer .socials{margin-top:20px;}
+    footer .socials a{color:#D4AF37;font-size:1.8rem;margin:0 10px;transition:all .3s ease;}
+    footer .socials a:hover{color:#F5E7C3;transform:scale(1.2);}
+  </style>
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <img src="logo.png.jpeg" alt="Team Hussaini Official Logo">
-        </div>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#about">Mission</a>
-            <a href="#join">Join</a>
-            <a href="https://www.instagram.com/channel/AbaU01kG4w15B9fb/?igsh=MXhkdzFubnN5y" target="_blank">Broadcast</a>
-        </nav>
-    </header>
+  <header>
+    <div class="logo">
+      <img src="logo.png.jpeg" alt="Team Hussaini Official Logo">
+    </div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#join">Join</a>
+      <a href="#actions">Actions</a>
+      <a href="https://www.instagram.com/channel/AbaU01kG4w15B9fb/?igsh=MXhkdzFubnN5y" target="_blank">Broadcast</a>
+    </nav>
+  </header>
 
-    <section id="hero">
-        <div class="container">
-            <h1>Team Hussaini Official</h1>
-            <p class="subheadline">“Protecting the honor of Huzoor صلى الله عليه وسلم — lawfully and respectfully.”</p>
-            <p class="small-line">Standing with the Mazloomeen and supporting the Madadgar — always.</p>
-            <p>Join our peaceful, legal, and shar‘i efforts to safeguard the dignity of Allah Paak and Huzoor صلى الله عليه وسلم, and to support the oppressed (Mazloomeen) with justice and compassion.</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHxLwZ5RKWdpq0mbf5Kzpgm9cFVDylhtKouUQD4751SgQ1vw/viewform" target="_blank" class="btn">Join Team</a>
-            <a href="https://www.instagram.com/channel/AbaU01kG4w15B9fb/?igsh=MXhkdzFubnN5y" target="_blank" class="btn">Join Broadcast</a>
-        </div>
-    </section>
+  <section id="hero">
+    <div class="container">
+      <h1>Team Hussaini Official</h1>
+      <p class="subheadline">“Protecting the honor of Huzoor صلى الله عليه وسلم — lawfully and respectfully.”</p>
+      <p>Join our peaceful, legal, and shar‘i efforts to safeguard the dignity of Allah Paak and Huzoor صلى الله عليه وسلم, and to support the oppressed (Mazloomeen).</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHxLwZ5RKWdpq0mbf5Kzpgm9cFVDylhtKouUQD4751SgQ1vw/viewform" target="_blank" class="btn">Join Team</a>
+      <a href="https://www.instagram.com/channel/AbaU01kG4w15B9fb/?igsh=MXhkdzFubnN5y" target="_blank" class="btn">Join Broadcast</a>
+    </div>
+  </section>
 
-    <section id="about">
-        <div class="container">
-            <h2>Our Mission</h2>
-            <blockquote>
-                Hamari tanzeem ka asal maqsad hai:<br>
-                Huzoor صلى الله عليه وسلم ki namoos ki hifazat karna,<br>
-                aur jo log Allah Paak ya Huzoor صلى الله عليه وسلم ki shaan mein gustakhi karte hain,<br>
-                unke against legal aur shar‘i tor par action lena.<br><br>
-                Hum Mazloomon ke saath hain, unki madad karte hain, aur Madadgaron ko support karte hain jo insaaf aur aman ke liye kaam karte hain.
-            </blockquote>
-            <ul>
-                <li>Huzoor صلى الله عليه وسلم ki namoos ki hifazat karna.</li>
-                <li>Gustakhi karne walon ke khilaaf legal aur shar‘i action lena.</li>
-                <li>Mazloomon aur madadgaron ki madad karna, insaaf aur aman ko barqarar rakhna.</li>
-            </ul>
-            <p class="note">“We do not endorse violence. All actions are lawful, peaceful, and follow shar‘i and legal guidance.”</p>
-        </div>
-    </section>
+  <section id="about">
+    <div class="container">
+      <h2>Our Mission</h2>
+      <p>
+        Huzoor صلى الله عليه وسلم ki namoos ki hifazat karna, aur jo log Allah Paak ya Huzoor صلى الله عليه وسلم ki shaan mein gustakhi karte hain unke khilaaf shar‘i aur legal tor par action lena.  
+        Hum Mazloomon ke saath hain, unki madad karte hain, aur Madadgaron ko support karte hain jo insaaf aur aman ke liye kaam karte hain.
+      </p>
+      <p style="font-style:italic;color:#ccc;">We do not endorse violence. All actions are lawful, peaceful, and follow shar‘i and legal guidance.</p>
+    </div>
+  </section>
 
-    <section id="join">
-        <div class="container">
-            <h2>Join Team Hussaini</h2>
-            <p>Click below to open the official registration form or join our broadcast for latest updates and campaigns.</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHxLwZ5RKWdpq0mbf5Kzpgm9cFVDylhtKouUQD4751SgQ1vw/viewform" target="_blank" class="btn">Join Team (Google Form)</a>
-            <a href="https://www.instagram.com/channel/AbaU01kG4w15B9fb/?igsh=MXhkdzFubnN5y" target="_blank" class="btn">Join Broadcast (Instagram)</a>
-            <p class="note">“By joining, you agree to be contacted about lawful, peaceful, and community-based initiatives.”</p>
+  <!-- 🟡 Actions Section -->
+  <section id="actions">
+    <div class="container">
+      <h2>Actions & Results</h2>
+      <p>Team Hussaini ke dwara liye gaye kuch ahem actions aur unke results:</p>
+      <div class="actions-grid">
+        <div class="action-item">
+          <img src="assets/images/action1.jpeg" alt="Action 1">
+          <p>Action 1 Result</p>
         </div>
-    </section>
-
-    <!-- Actions Result Section -->
-    <section id="actions">
-        <div class="container">
-            <h2>Actions Result</h2>
-            <p>
-                Team Hussaini ke dwara liye gaye actions ke nateeje mein, gustakho dwara kiye gaye social media posts aur comments ko delete karwaya gaya, 
-                unse maafi mangwaya gayi aur ye sunischit kiya gaya ke ainda kabhi aisi ghati dobara na ho.
-            </p>
-
-            <div class="action-grid">
-                <div class="action-item">
-                    <img src="action1.jpeg" alt="Action 1">
-                    <p>Action 1 Result</p>
-                </div>
-                <div class="action-item">
-                    <img src="action2.jpeg" alt="Action 2">
-                    <p>Action 2 Result</p>
-                </div>
-                <div class="action-item">
-                    <img src="action3.jpeg" alt="Action 3">
-                    <p>Action 3 Result</p>
-                </div>
-                <div class="action-item">
-                    <img src="action4.jpeg" alt="Action 4">
-                    <p>Action 4 Result</p>
-                </div>
-            </div>
+        <div class="action-item">
+          <img src="assets/images/action2.jpeg" alt="Action 2">
+          <p>Action 2 Result</p>
         </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>Contact: <a href="mailto:contact@teamhussaini.org">contact@teamhussaini.org</a></p>
-            <p class="legal">Team Hussaini Official supports Mazloomeen and Madadgaron through lawful, non-violent actions. All efforts are peaceful, legal, and guided by shar‘i principles.</p>
+        <div class="action-item">
+          <img src="assets/images/action3.jpeg" alt="Action 3">
+          <p>Action 3 Result</p>
         </div>
-    </footer>
+        <div class="action-item">
+          <img src="assets/images/action4.jpeg" alt="Action 4">
+          <p>Action 4 Result</p>
+        </div>
+      </div>
+      <p style="margin-top:30px;color:#ccc;">Gustakho dwara kiye gaye social media posts aur comments delete karwaye gaye, maafi mangwayi gayi aur ye sunischit kiya gaya ke aage aisi gustakhi dobara na ho.</p>
+    </div>
+  </section>
+
+  <section id="join">
+    <div class="container">
+      <h2>Join Team Hussaini</h2>
+      <p>Click below to open the official registration form or join our broadcast for latest updates.</p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHxLwZ5RKWdpq0mbf5Kzpgm9cFVDylhtKouUQD4751SgQ1vw/viewform" target="_blank" class="btn">Join Team</a>
+      <a href="https://www.instagram.com/channel/AbaU01kG4w15B9fb/?igsh=MXhkdzFubnN5y" target="_blank" class="btn">Join Broadcast</a>
+    </div>
+  </section>
+
+  <!-- 🟢 Footer with Social Icons -->
+  <footer>
+    <div class="container">
+      <p>Contact: <a href="mailto:contact@teamhussaini.org">contact@teamhussaini.org</a></p>
+      <div class="socials">
+        <h3 style="color:#D4AF37; margin-bottom:10px;">Follow Us</h3>
+        <a href="https://youtube.com/@teamhussainiofficial?si=V1ByzcQ8yQnyLTUu" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.facebook.com/share/1GWeWfXSyh/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://x.com/TH_Official__?t=XK3yZoKkR6CKnZ6n2pfOKw&s=09" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      </div>
+      <p class="legal" style="margin-top:20px;">Team Hussaini Official supports Mazloomeen and Madadgaron through lawful, non-violent actions. All efforts are peaceful, legal, and guided by shar‘i principles.</p>
+    </div>
+  </footer>
 </body>
 </html>
-
